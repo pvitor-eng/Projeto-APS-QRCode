@@ -1,13 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de QR Code SPDA</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <title>Site Aps QRCode</title>
 </head>
 <body>
+    <div class="container">
+        <h2>Gerar QR Code do Ponto</h2>
+        
+        <input type="url" id="link-pdf" placeholder="Cole o link do PDF aqui..." required>
+        
+        <button id="btn-gerar">Gerar QR Code</button>
 
+        <div id="area-resultado" style="display: none;">
+            <p>QR Code Gerado:</p>
+            <img id="qr-code-img" src="" alt="QR Code do Ponto de Inspeção">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
